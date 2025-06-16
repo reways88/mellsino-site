@@ -2,11 +2,16 @@
 
 body {
     font-family: 'Russo One', sans-serif;
-    background: radial-gradient(circle, rgba(106, 0, 255, 0.8), rgba(255, 0, 127, 0.8), rgba(255, 140, 0, 0.8));
+    background: linear-gradient(45deg, #6a00ff, #ff007f, #ff8c00);
+    animation: backgroundFlow 12s infinite alternate;
     color: #fff;
     text-align: center;
     margin: 0;
     padding: 0;
+}
+@keyframes backgroundFlow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
 
 .header {
@@ -24,56 +29,55 @@ body {
 }
 
 .balance {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px rgba(255, 140, 0, 1);
 }
 
 .slot-machine {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 20px;
-    font-size: 30px;
+    font-size: 40px;
     background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 15px;
+    padding: 25px;
+    border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(255, 140, 0, 1);
 }
 
 .slot {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     background: #ff8c00;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 15px;
+    transition: transform 0.5s;
 }
 
 .button {
-    display: inline-block;
     background: linear-gradient(45deg, #ff007f, #ff8c00);
-    color: #fff;
-    padding: 20px 40px;
-    font-size: 22px;
+    padding: 25px 50px;
+    font-size: 24px;
     font-weight: bold;
     border-radius: 15px;
-    transition: 0.3s;
     cursor: pointer;
-    box-shadow: 0px 0px 25px rgba(255, 140, 0, 1);
+    box-shadow: 0px 0px 30px rgba(255, 140, 0, 1);
 }
 
 .button:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .fireworks {
     position: fixed;
-    top: 0;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     display: none;
-    font-size: 80px;
+    font-size: 100px;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
 }

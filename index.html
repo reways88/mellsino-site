@@ -4,58 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mellsino — Казино будущего</title>
-    <style>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Copilot_20250616_184746.png" alt="Логотип Mellsino">
+        </div>
+        <h1>🔥 Добро пожаловать в Mellsino 🔥</h1>
+    </div>
+    
+    <div class="content">
+        <p>Испытай свою удачу и выиграй миллионы!</p>
+        <div class="balance">Баланс: <span id="balance">100000</span> M$</div>
+        
+        <div class="slot-machine">
+            <div class="slot" id="slot1">🎰</div>
+            <div class="slot" id="slot2">🎰</div>
+            <div class="slot" id="slot3">🎰</div>
+        </div>
+        
+        <button class="button" onclick="spinSlot()">Крутить слот (-100 M$)</button>
+        <p><a href="mellstroy.html" class="button">О Mellstroy</a></p>
+        <div class="fireworks" id="fireworks">🎆🎇💥</div>
+    </div>
 
-        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
-        body {
-            font-family: 'Russo One', sans-serif;
-            background: radial-gradient(circle, rgba(106, 0, 255, 0.8), rgba(255, 0, 127, 0.8), rgba(255, 140, 0, 0.8));
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            padding: 40px;
-            box-shadow: 0px 0px 30px rgba(255, 0, 127, 1);
-        }
-        .logo img {
-            width: 300px;
-            object-fit: contain;
-        }
-        .content {
-            padding: 80px;
-        }
-        .balance {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .slot-machine {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            font-size: 30px;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 0px 20px rgba(255, 140, 0, 1);
-        }
-        .slot {
-            width: 80px;
-            height: 80px;
-            background: #ff8c00;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            font-weight: bold;
-            border-radius: 10px;
-        }
-        .button {
-            display: inline-block;
-            background: linear-gradient(45deg, #ff007f, #ff8c00);
-            color: #fff;
-            padding: 20px 40
+    <script src="script.js"></script>
+</body>
+</html>
